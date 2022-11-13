@@ -21,7 +21,7 @@ async def on_message(message):
 
     if message.content.startswith(".hello"):
         await message.channel.send(f"hellow {message.author}")
-    if message.content[0] == "?" and message.content.startswith("hello"):
+    if message.content[0] == "?":
         await message.channel.send(f"hi,{message.author}")
 
 
