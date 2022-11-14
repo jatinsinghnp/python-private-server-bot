@@ -46,7 +46,8 @@ async def on_message(message):
 # user join
 @client.listen()
 async def on_member_join(member):
-    welcome_channel = client.get_channel(1010188442048663625)
+    
+    welcome_channel = client.get_channel(978999180045459499)
     print(f"{member} has join ")
     await welcome_channel.send(f"{member.mention} has join server ! thank you ")
     try:
