@@ -16,3 +16,5 @@ platformdirs==2.5.4
 python-dotenv==0.21.0
 tomli==2.0.1
 yarl==1.8.1
+packaging==21.3
+replicate==0.0.1a15
