@@ -59,13 +59,13 @@ async def on_member_remove(member):
         
 #bot command         
 
-bot = commands.Bot(
+client = commands.Bot(
     command_prefix="!",
     description="Runs models on Replicate!",
     intents=intents,
 )
 
-@bot.command()
+@client.command()
 async def make(ctx, *, prompt):
     """Generate an image from a text prompt using the stable-diffusion model"""
     msg = await ctx.send(f"“{prompt}”\n> Generating...")
@@ -77,6 +77,6 @@ async def make(ctx, *, prompt):
 
 
 
-bot.run(TOKEN)
+
 
 client.run(TOKEN)
