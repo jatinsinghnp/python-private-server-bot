@@ -47,7 +47,7 @@ async def on_message(message):
 @client.listen()
 async def on_member_join(member):
     
-    welcome_channel = client.get_channel(978999180045459499)
+    welcome_channel = client.get_channel(979006169551089685)
     print(f"{member} has join ")
     await welcome_channel.send(f"{member.mention} has join server ! thank you 😎😎😎😎 ")
     try:
@@ -61,13 +61,17 @@ async def on_member_join(member):
 # user remove
 @client.listen()
 async def on_member_remove(member):
-    welcome_channel = client.get_channel(978999180045459499)
+    welcome_channel = client.get_channel(979006169551089685)
     await welcome_channel.send(f"{member.mention} has left the the server  ! sob: ")
     try:
         await member.send(f"hey{member.display_name} goobye 🙋‍♂️🙋‍♂️ ")
     except:
         await welcome_channel.send(f"{member.mention} I can't dm you ,goodbye 🤷‍♂️🤷‍♂️🤷‍♂️")
 
+
+
+
+# image art gen command 
 @client.command()
 async def make(ctx, *, prompt):
     
@@ -75,7 +79,6 @@ async def make(ctx, *, prompt):
     model = replicate.models.get("stability-ai/stable-diffusion")
     image = model.predict(prompt=prompt)[0]
     await msg.edit(content=f"“{prompt}”\n{image}")
-
 
 
 client.run(TOKEN)

@@ -1,0 +1,17 @@
+{
+    "sex": [
+        "Male",
+        "Female",
+        "Other"
+    ],
+    "size": [
+        "(Tiny) - up to  1.5lb", "(Minute) 1.5-5lb", "(Diminutive) 5-25lb",
+        "(Small) 25-100lb ", "(Average) 100-400lb", "(Big) 400-1,500lb",
+        "(Huge) 1,500lb - 3 tons", "(Massive) 3-12 tons", "(Gigantic) 12-50 tons",
+        "(Colossal) 50-200 tons"
+      ]
+
+}
+
+
+   
